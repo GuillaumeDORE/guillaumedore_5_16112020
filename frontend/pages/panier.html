@@ -51,33 +51,17 @@
                         <h2 class="card-title">Panier </h2>
                         <table class="table table-bordered my-5">
                             <thead>
-                              <tr>
-                                <th scope="col"> </th>
-                                <th scope="col">Articles</th>
-                                <th scope="col">Quantité</th>
-                                <th scope="col">Prix</th>
-                              </tr>
+                                <tr>
+                                    <th scope="col"> </th>
+                                    <th scope="col">Articles</th>
+                                    <th scope="col">Quantité</th>
+                                    <th scope="col">Prix</th>
+                                    <th scope="col">Prix total</th>
+                                </tr>
                             </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"></th>
-                                <td class="text-right px-5" colspan="2"> Prix total:</td>
-                                <td> € </td>
-                              </tr>
+                            <tbody id="tableau-panier">
                             </tbody>
-                          </table>
+                        </table>
                         <p class="card-text text-info">Veuillez remplir le formulaire suivant pour poursuivre votre
                             commande.</p>
                         <form>
@@ -142,6 +126,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="../scripts/panier.js"></script>
 
 </body>
 
