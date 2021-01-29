@@ -78,5 +78,6 @@ fetch(`http://localhost:3000/API/cameras/${id}`)
       event.preventDefault();
       const product = new Product(pageProduit._id, pageProduit.name, pageProduit.price, pageProduit.description, pageProduit.imageUrl, 1);
       panier.addProduct(product);
+      alert("Produit bien ajouté au panier!");
     })
   })

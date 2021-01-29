@@ -64,38 +64,45 @@
                         </table>
                         <p class="card-text text-info">Veuillez remplir le formulaire suivant pour poursuivre votre
                             commande.</p>
-                        <form>
+                        <form >
                             <div class="form-row">
                                 <div class="col form-group">
                                     <label class="font-weight-bold" for="prenom">Prénom</label>
-                                    <input type="text" id="prenom" class="form-control" placeholder="Prénom">
+                                    <input type="text" id="prenom" class="form-control" placeholder="Prénom" required>
+                                    <small></small>
                                 </div>
                                 <div class="col form-group">
                                     <label class="font-weight-bold" for="nom">Nom</label>
-                                    <input type="text" id="nom" class="form-control" placeholder="Nom">
+                                    <input type="text" id="nom" class="form-control" placeholder="Nom" required>
+                                    <small></small>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col form-group">
                                     <label class="font-weight-bold" for="adresse">Adresse</label>
-                                    <input type="text" id="adresse" class="form-control" placeholder="N° et rue">
+                                    <input type="text" id="adresse" class="form-control" placeholder="N° et rue" required>
+                                    <small></small>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col form-group">
                                     <label class="font-weight-bold" for="ville">Ville</label>
-                                    <input type="text" id="ville" class="form-control" placeholder="Ville">
+                                    <input type="text" id="ville" class="form-control" placeholder="Ville" required>
+                                    <small></small>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col form-group">
                                     <label class="font-weight-bold" for="email">Adresse électronique</label>
                                     <input type="email" id="email" class="form-control"
-                                        placeholder="Adresse électronique">
+                                        placeholder="Adresse électronique" required>
+                                    <small></small>
                                 </div>
                             </div>
                         </form>
-                        <a class="btn btn-success" href="confirmation.html" role="button">Confirmer la commande</a>
+                        <a class="btn btn-success" id="confirmer" href="confirmation.html" role="button">Confirmer la
+                            commande</a>
+                        <small></small>
                     </div>
                 </div>
             </div>
