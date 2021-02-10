@@ -81,3 +81,6 @@ fetch(`http://localhost:3000/API/cameras/${id}`)
       alert("Produit bien ajouté au panier!");
     })
   })
+  .catch (function(error){
+    console.log(error);
+})

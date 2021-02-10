@@ -1,11 +1,21 @@
 // Création tableau récapitulatif du panier
 const panier = JSON.parse(localStorage.getItem('products'));
 const tableau = document.getElementById("tableau-panier");
+const formulaire = document.getElementById("formulaire"); 
 let prixTotal = 0;
 let productsIdArray = [];
 
+const afficherFormulaire = function(){
+    formulaire.style.display = "block";
+}
+
+const masquerFormulaire = function(){
+    formulaire.style.display = "none";
+}
+
 const affichageTableau = function(){
     if (panier != null){
+        afficherFormulaire();
         for (let i = 0; i < panier.length; i++) {
             let produit = panier[i];
             tableau.innerHTML += `
@@ -26,6 +36,7 @@ const affichageTableau = function(){
         <td> ${prixTotal}€ </td>
         </tr>`;
     }else {
+        masquerFormulaire();
         tableau.innerHTML += `
         <tr><td colspan="5">
             <div class="alert alert-danger" role="alert">
@@ -106,14 +117,9 @@ const sendForm = function () {
             localStorage.setItem('totalPrice', JSON.stringify([prixTotal]));
             window.location.href = "confirmation.html";
         })
-    }else if(panier == null){
-        const alert = confirmer.nextElementSibling;
-        alert.innerHTML += `
-        <tr ><td colspan="5">
-            <div class="alert alert-danger my-3" role="alert">
-            Votre pannier est vide!
-            </div>
-        </td></tr>`;
+        .catch (function(error){
+            console.log(error);
+        })
     }else{
         console.error("Erreur lors de la confirmation");
     }
