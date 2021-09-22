@@ -1,6 +1,6 @@
 ## Construiser un site e-commerce  
 
-Projet n°5 Openclassroom dont le but est de constuire le front d'un site de e-commerce et d'intéragir avec une API  
+Projet n°5 Openclassroom dont le but est de construire le front d'un site de e-commerce et d'interagir avec une API  
 
 # Orinoco 
 
